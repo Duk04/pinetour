@@ -221,12 +221,25 @@ nav a {
   opacity: 0.8;
   position: relative;
 }
-.day-1:hover ~ .p2 {
+
+.day-1:hover + .p2 {
+  display: block;
+}
+.day-2:hover + .p3 {
+  display: block;
+}
+.day-3:hover + .p1 {
+  display: block;
+}
+.day-4:hover + .p5 {
+  display: block;
+}
+.day-5:hover + .p4 {
   display: block;
 }
 .p1 {
   position: absolute;
-  left: 0px;
+  left: 500px;
   top: 200px;
   display: none;
 }
@@ -235,6 +248,7 @@ nav a {
   right: 0px;
   top: 150px;
   display: none;
+  z-index: 10;
 }
 .p3 {
   position: absolute;
@@ -245,13 +259,13 @@ nav a {
 .p4 {
   position: absolute;
   top: -20px;
-  left: 250px;
+  left: 800px;
   display: none;
 }
 .p5 {
   position: absolute;
   top: -30px;
-  left: 0px;
+  left: 500px;
   display: none;
 }
 .nutag:hover {
@@ -406,6 +420,10 @@ nav a {
 .une:hover {
   box-shadow: 10px 10px 0px 0px rgba(67, 141, 190, 0.46),
     -10px -10px 0px 0px rgba(77, 103, 112, 0.25);
+}
+.un:hover .select {
+  background-color: black;
+  color: white;
 }
 .box {
   margin-left: 20px;
